@@ -1,32 +1,24 @@
 <footer class="site-footer">
   <div class="wrapper">
     <div class="footer-content">
-      <div class="footer-col-wrapper">
-        <div class="footer-col footer-col-1">
-          <ul class="contact-list">
-            <li class="p-name">
-              {%- if site.author -%}
-                {{ site.author | escape }}
-              {%- else -%}
-                {{ site.title | escape }}
-              {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-          </ul>
-        </div>
-
-        <div class="footer-col footer-col-2">
-          {%- include social.html -%}
-        </div>
-
-        <div class="footer-col footer-col-3">
-          <div class="footer-cta">
-            <h4>Ready to start a conversation?</h4>
-            <p>Let's discuss how we can work together to build something amazing.</p>
-            <a href="mailto:{{ site.email }}" class="btn btn-primary btn-sm">Send Me an Email</a>
-          </div>
+      <!-- CTA Section -->
+      <div class="footer-cta" style="text-align: center; margin-bottom: 2rem;">
+        <h4>Ready to start a conversation?</h4>
+        <p>Let's discuss how we can work together to build something amazing.</p>
+      </div>
+      
+      <!-- Social Buttons Section -->
+      <div class="footer-social" style="text-align: center; margin-bottom: 2rem;">
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          {%- if site.email -%}
+          <a href="mailto:{{ site.email }}" class="btn btn-outline">📧 Email</a>
+          {%- endif -%}
+          {%- if site.linkedin_username -%}
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="btn btn-outline">💼 LinkedIn</a>
+          {%- endif -%}
+          {%- if site.github_username -%}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" class="btn btn-outline">🐙 GitHub</a>
+          {%- endif -%}
         </div>
       </div>
     </div>
