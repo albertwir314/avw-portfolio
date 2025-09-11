@@ -5,8 +5,6 @@ description: Learn more about Albert Wiryawan's background, experience, and appr
 permalink: /about/
 ---
 
-# About Me
-
 I'm a passionate data engineer with a strong foundation in scalable data systems and analytics. My journey in technology has been driven by curiosity about data patterns, continuous learning in emerging technologies, and a desire to solve complex data challenges through elegant, efficient solutions.
 
 
