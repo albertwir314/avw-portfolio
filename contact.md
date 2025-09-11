@@ -13,7 +13,7 @@ I'm always interested in discussing new opportunities, challenging projects, and
   <div class="contact-item">
     <div class="contact-icon">📧</div>
     <h4>Email</h4>
-    <p><a href="mailto:albert.wiryawan@example.com">albert.wiryawan@example.com</a></p>
+    <p><a href="mailto:albertvw99@gmail.com">albertvw99@gmail.com</a></p>
   </div>
   
   <div class="contact-item">
