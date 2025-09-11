@@ -83,15 +83,6 @@ description: Professional software developer specializing in full-stack developm
     </ul>
   </div>
 </div>
-
-## What I Bring to Your Team
-
-- **Data Engineering Expertise**: Proven experience building scalable data pipelines and warehousing solutions
-- **Analytics-Driven**: Strong foundation in statistical learning and data mining methodologies
-- **Cloud-Native Solutions**: Extensive experience with modern cloud platforms and data technologies
-- **Client-Focused**: Track record of translating business requirements into technical solutions
-- **Continuous Innovation**: Always exploring new technologies and approaches in the data engineering space
-
 ---
 
 <div style="text-align: center; margin: 3rem 0;">
