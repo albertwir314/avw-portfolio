@@ -5,7 +5,7 @@ description: Get in touch with Albert Wiryawan to discuss opportunities, project
 permalink: /contact/
 ---
 
-# Let's Work Together
+# Let's Get in Touch
 
 I'm always interested in discussing new opportunities, challenging projects, and potential collaborations. Whether you're looking for a full-time developer, consultant, or technical advisor, I'd love to hear about what you're working on.
 
@@ -13,19 +13,19 @@ I'm always interested in discussing new opportunities, challenging projects, and
   <div class="contact-item">
     <div class="contact-icon">📧</div>
     <h4>Email</h4>
-    <p><a href="mailto:albertvw99@gmail.com">albertvw99@gmail.com</a></p>
+    <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
   </div>
   
   <div class="contact-item">
     <div class="contact-icon">💼</div>
     <h4>LinkedIn</h4>
-    <p><a href="https://linkedin.com/in/albertwiryawan" target="_blank">linkedin.com/in/albertwiryawan</a></p>
+    <p><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">linkedin.com/in/{{ site.linkedin_username }}</a></p>
   </div>
   
   <div class="contact-item">
     <div class="contact-icon">🐙</div>
     <h4>GitHub</h4>
-    <p><a href="https://github.com/albertwiryawan" target="_blank">github.com/albertwiryawan</a></p>
+    <p><a href="https://github.com/{{ site.github_username }}" target="_blank">github.com/{{ site.github_username }}</a></p>
   </div>
 </div>
 
@@ -133,5 +133,5 @@ Yes, I offer maintenance and support agreements for projects I've worked on, inc
 <div style="text-align: center; margin: 3rem 0; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
   <h3>Ready to start a conversation?</h3>
   <p>Whether you have a specific project in mind or just want to explore possibilities, I'd love to hear from you. Let's discuss how we can work together to build something amazing.</p>
-  <a href="mailto:albert.wiryawan@example.com" class="btn btn-primary">Send Me an Email</a>
+  <a href="mailto:{{ site.email }}" class="btn btn-primary">Send Me an Email</a>
 </div>
