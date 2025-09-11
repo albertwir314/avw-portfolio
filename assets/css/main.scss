@@ -1,0 +1,430 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+// Professional color scheme
+$primary-color: #2c3e50;
+$secondary-color: #34495e;
+$accent-color: #3498db;
+$success-color: #27ae60;
+$text-color: #333;
+$text-light: #7f8c8d;
+$bg-color: #ffffff;
+$bg-light: #f8f9fa;
+$border-color: #e1e4e8;
+$shadow-light: rgba(0, 0, 0, 0.1);
+
+// Typography
+body {
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: $primary-color;
+  line-height: 1.3;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+// Professional layout improvements
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Header styling
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid $border-color;
+  background-color: $bg-color;
+  box-shadow: 0 2px 4px $shadow-light;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $primary-color;
+  text-decoration: none;
+  
+  &:hover {
+    color: $accent-color;
+    text-decoration: none;
+  }
+}
+
+.site-nav .page-link {
+  color: $text-color;
+  font-weight: 500;
+  margin-left: 2rem;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $accent-color;
+    text-decoration: none;
+  }
+  
+  &.current {
+    color: $accent-color;
+  }
+}
+
+// Hero section
+.hero {
+  background: linear-gradient(135deg, $bg-light 0%, $bg-color 100%);
+  padding: 4rem 0;
+  text-align: center;
+  margin-bottom: 3rem;
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: $primary-color;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: $text-light;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+// Button styles
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  text-align: center;
+  
+  &.btn-primary {
+    background-color: $accent-color;
+    color: white;
+    
+    &:hover {
+      background-color: darken($accent-color, 10%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba($accent-color, 0.3);
+    }
+  }
+  
+  &.btn-outline {
+    background-color: transparent;
+    color: $accent-color;
+    border: 2px solid $accent-color;
+    
+    &:hover {
+      background-color: $accent-color;
+      color: white;
+      transform: translateY(-2px);
+    }
+  }
+  
+  &.btn-secondary {
+    background-color: $secondary-color;
+    color: white;
+    
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
+
+// Projects grid
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  background: $bg-color;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px $shadow-light;
+    border-color: $accent-color;
+  }
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: $primary-color;
+  }
+  
+  .project-description {
+    color: $text-light;
+    margin-bottom: 1rem;
+  }
+  
+  .project-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+// Tech stack styling
+.tech-stack {
+  margin: 1rem 0;
+  
+  .tech-tag {
+    display: inline-block;
+    background-color: $bg-light;
+    color: $text-color;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0.25rem 0.25rem 0.25rem 0;
+    border: 1px solid $border-color;
+  }
+}
+
+// Skills section
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.skill-category {
+  background: $bg-light;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid $accent-color;
+  
+  h4 {
+    margin-top: 0;
+    color: $primary-color;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      padding: 0.25rem 0;
+      color: $text-color;
+    }
+  }
+}
+
+// Experience timeline
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 2rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: $accent-color;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  background: $bg-color;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-left: 1rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: -1.75rem;
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    background: $accent-color;
+    border-radius: 50%;
+    border: 3px solid $bg-color;
+  }
+  
+  h4 {
+    margin-top: 0;
+    color: $primary-color;
+  }
+  
+  .timeline-date {
+    color: $text-light;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+}
+
+// Contact section
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  
+  .contact-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: $bg-light;
+    border-radius: 8px;
+    
+    .contact-icon {
+      font-size: 2rem;
+      color: $accent-color;
+      margin-bottom: 1rem;
+    }
+    
+    h4 {
+      margin: 0.5rem 0;
+      color: $primary-color;
+    }
+  }
+}
+
+// Footer improvements
+.site-footer {
+  background-color: $primary-color;
+  color: white;
+  
+  .footer-content {
+    padding: 2rem 0;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  a {
+    color: rgba(255, 255, 255, 0.8);
+    
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+// Responsive design
+@media screen and (max-width: 800px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .site-nav .page-link {
+    margin-left: 1rem;
+  }
+  
+  .timeline {
+    padding-left: 1rem;
+  }
+  
+  .timeline-item {
+    margin-left: 0.5rem;
+    
+    &::before {
+      left: -1.25rem;
+    }
+  }
+}
+
+// Icon improvements
+.icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+// Syntax highlighting improvements
+.highlight {
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+// Loading states and animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+// Print styles
+@media print {
+  .site-header,
+  .site-footer,
+  .btn {
+    display: none;
+  }
+  
+  .wrapper {
+    max-width: none;
+    padding: 0;
+  }
+}
