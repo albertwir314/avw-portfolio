@@ -1,4 +1,4 @@
-title: "Albert Wiryawan - Portfolio"
+title: "Albert Wiryawan"
 description: "Professional portfolio showcasing development expertise and projects"
 baseurl: "/avw-portfolio"
 url: "https://albertwiryawan.github.io"
@@ -21,7 +21,7 @@ header_pages:
   - contact.md
 
 # Social links (update with your actual usernames)
-github_username: albertwiryawan
+github_username: albertwir314
 linkedin_username: albertwiryawan
 
 # Collections
@@ -49,5 +49,5 @@ exclude:
 
 # Professional settings
 author: Albert Wiryawan
-email: your.email@example.com
+email: albertvw99@gmail.com
 timezone: America/New_York
