@@ -7,7 +7,7 @@ permalink: /about/
 
 # About Me
 
-I'm a passionate software developer with a strong foundation in full-stack development and a commitment to writing clean, efficient, and maintainable code. My journey in technology has been driven by curiosity, continuous learning, and a desire to solve complex problems through elegant solutions.
+I'm a passionate data engineer with a strong foundation in scalable data systems and analytics. My journey in technology has been driven by curiosity about data patterns, continuous learning in emerging technologies, and a desire to solve complex data challenges through elegant, efficient solutions.
 
 ## My Approach to Development
 
@@ -63,20 +63,20 @@ When faced with challenges, I:
 ## Background
 
 ### Professional Experience
-I have experience across the full software development lifecycle, from initial concept through deployment and maintenance. My work has included:
+I have experience across the full data engineering lifecycle, from data ingestion through analytics and reporting. My work has included:
 
-- **Full-Stack Development**: Building complete web applications from database to user interface
-- **API Development**: Creating robust, scalable backend services
-- **Frontend Architecture**: Designing responsive, accessible user interfaces
-- **DevOps**: Implementing CI/CD pipelines and cloud infrastructure
-- **Team Collaboration**: Working in agile teams with cross-functional stakeholders
+- **Data Warehousing**: Architecting scalable solutions with Apache Iceberg and Trino
+- **Stream Processing**: Building real-time data pipelines with Apache Kafka and Protobuf
+- **Cloud Analytics**: Implementing solutions on GCP, AWS, and Azure platforms
+- **Client Consulting**: Translating business requirements into technical data solutions
+- **Cross-functional Collaboration**: Working with reporting teams and business stakeholders
 
 ### Technical Interests
 I'm particularly interested in:
-- **Web Performance**: Optimizing applications for speed and efficiency
-- **Developer Experience**: Creating tools and workflows that improve productivity
-- **System Architecture**: Designing scalable, maintainable systems
-- **Emerging Technologies**: Exploring new frameworks, languages, and paradigms
+- **Modern Data Formats**: Exploring innovations like Apache Iceberg for efficient data storage
+- **Real-time Analytics**: Building systems that provide insights from streaming data
+- **Cloud-Native Architecture**: Designing scalable, cost-effective data solutions
+- **Data Democratization**: Making data accessible and usable across organizations
 
 ## Values & Principles
 

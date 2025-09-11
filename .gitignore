@@ -26,3 +26,6 @@ npm-debug.log*
 
 # Environment variables
 .env
+
+# raw descriptions
+raw_descriptions/

@@ -7,7 +7,7 @@ description: Professional software developer specializing in full-stack developm
 <div class="hero">
   <h1>Albert Wiryawan</h1>
   <div class="hero-subtitle">
-    Professional Software Developer specializing in full-stack development, modern web technologies, and scalable system architecture.
+    Data Engineer specializing in scalable data systems, streaming analytics, and cloud-native data warehousing solutions.
   </div>
   <div class="hero-cta">
     <a href="/avw-portfolio/about" class="btn btn-primary">Learn More About Me</a>
@@ -44,53 +44,53 @@ description: Professional software developer specializing in full-stack developm
 
 <div class="skills-grid">
   <div class="skill-category">
-    <h4>Frontend Development</h4>
+    <h4>Data Engineering</h4>
     <ul>
-      <li>React, Vue.js, Angular</li>
-      <li>TypeScript, JavaScript (ES6+)</li>
-      <li>HTML5, CSS3, SASS/SCSS</li>
-      <li>Responsive Design</li>
+      <li>Apache Iceberg, Trino</li>
+      <li>Apache Kafka, Protobuf</li>
+      <li>Streaming Data Processing</li>
+      <li>Data Warehouse Architecture</li>
     </ul>
   </div>
   
   <div class="skill-category">
-    <h4>Backend Development</h4>
+    <h4>Programming & Analytics</h4>
     <ul>
-      <li>Node.js, Python, Java</li>
-      <li>RESTful APIs, GraphQL</li>
-      <li>Database Design (SQL/NoSQL)</li>
-      <li>Microservices Architecture</li>
+      <li>Python, Java, SQL</li>
+      <li>R, C++, Matlab</li>
+      <li>PyData Stack</li>
+      <li>Statistical Learning</li>
     </ul>
   </div>
   
   <div class="skill-category">
-    <h4>DevOps & Tools</h4>
+    <h4>Cloud & Infrastructure</h4>
     <ul>
+      <li>GCP, AWS, Azure</li>
+      <li>Snowflake, Databricks</li>
       <li>Docker, Kubernetes</li>
-      <li>AWS, Google Cloud</li>
-      <li>CI/CD Pipelines</li>
-      <li>Git, Agile Methodologies</li>
+      <li>Terraform, Jenkins</li>
     </ul>
   </div>
   
   <div class="skill-category">
-    <h4>Development Practices</h4>
+    <h4>Consulting & Analysis</h4>
     <ul>
-      <li>Test-Driven Development</li>
-      <li>Clean Architecture</li>
-      <li>Code Review & Pair Programming</li>
-      <li>Performance Optimization</li>
+      <li>Data Mining & Analytics</li>
+      <li>Database Systems Design</li>
+      <li>Client Engagement</li>
+      <li>Cross-functional Collaboration</li>
     </ul>
   </div>
 </div>
 
 ## What I Bring to Your Team
 
-- **Problem-Solving Mindset**: I approach challenges with analytical thinking and creative solutions
-- **Quality Focus**: Committed to writing clean, maintainable, and well-tested code
-- **Continuous Learning**: Stay current with emerging technologies and best practices  
-- **Collaboration**: Experience working in agile teams and mentoring junior developers
-- **User-Centric**: Always consider the end-user experience in technical decisions
+- **Data Engineering Expertise**: Proven experience building scalable data pipelines and warehousing solutions
+- **Analytics-Driven**: Strong foundation in statistical learning and data mining methodologies
+- **Cloud-Native Solutions**: Extensive experience with modern cloud platforms and data technologies
+- **Client-Focused**: Track record of translating business requirements into technical solutions
+- **Continuous Innovation**: Always exploring new technologies and approaches in the data engineering space
 
 ---
 
