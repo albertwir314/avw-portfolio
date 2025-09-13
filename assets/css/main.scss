@@ -299,31 +299,6 @@ h3 { font-size: 1.5rem; }
   }
 }
 
-// Contact section
-.contact-info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-  
-  .contact-item {
-    text-align: center;
-    padding: 1.5rem;
-    background: $bg-light;
-    border-radius: 8px;
-    
-    .contact-icon {
-      font-size: 2rem;
-      color: $accent-color;
-      margin-bottom: 1rem;
-    }
-    
-    h4 {
-      margin: 0.5rem 0;
-      color: $primary-color;
-    }
-  }
-}
 
 // Footer improvements
 .site-footer {

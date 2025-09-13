@@ -173,6 +173,5 @@ My career in software development has been shaped by diverse projects, continuou
   <p>I'm always interested in opportunities to work on challenging projects with great teams. Let's discuss how my experience can contribute to your organization's success.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
     <a href="/avw-portfolio/projects" class="btn btn-outline">View My Projects</a>
-    <a href="/avw-portfolio/contact" class="btn btn-primary">Get In Touch</a>
   </div>
 </div>

@@ -133,7 +133,6 @@ Achieving fast load times while maintaining visual appeal involved:
 - **Dark Mode**: Toggle between light and dark themes
 - **Blog Section**: Technical writing and project deep-dives
 - **Interactive Elements**: Subtle animations and micro-interactions
-- **Contact Form**: Server-side form processing for direct contact
 
 ### Technical Improvements
 - **Image Optimization**: Implement responsive images and next-gen formats
