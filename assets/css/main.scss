@@ -38,7 +38,7 @@ h3 { font-size: 1.5rem; }
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 60px;
 }
 
 // Header styling
@@ -102,6 +102,13 @@ h3 { font-size: 1.5rem; }
   gap: 3rem;
   align-items: flex-start;
   margin-bottom: 3rem;
+
+  .profile-left {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
   .profile-image-container {
     flex-shrink: 0;
@@ -277,33 +284,77 @@ h3 { font-size: 1.5rem; }
   }
 }
 
-// Skills section
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
+// Skills Table
+.skills-table {
+  margin: 2.5rem 0;
+  background: $bg-color;
+  border-radius: 12px;
+  border: 1px solid $border-color;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
 
-.skill-category {
-  background: $bg-light;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid $accent-color;
-  
-  h4 {
-    margin-top: 0;
-    color: $primary-color;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
   }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-    li {
-      padding: 0.25rem 0;
-      color: $text-color;
+
+  thead {
+    background: $bg-light;
+    border-bottom: 2px solid $border-color;
+
+    th {
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      font-weight: 600;
+      color: $primary-color;
+      font-size: 1.1rem;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid rgba($border-color, 0.5);
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: rgba($bg-light, 0.3);
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    td {
+      padding: 1.5rem;
+      vertical-align: top;
+    }
+  }
+
+  .skill-category-name {
+    font-weight: 600;
+    color: $primary-color;
+    font-size: 1rem;
+    width: 200px;
+    min-width: 200px;
+  }
+
+  .skill-list {
+    .skill-group {
+      display: block;
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      strong {
+        color: $accent-color;
+        font-weight: 600;
+        margin-right: 0.5rem;
+      }
     }
   }
 }
@@ -358,6 +409,108 @@ h3 { font-size: 1.5rem; }
   }
 }
 
+
+// Home page full height layout
+body.home-page {
+  .home-content {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    box-sizing: border-box;
+
+    .wrapper {
+      width: 100%;
+    }
+  }
+}
+
+// Credentials box styling
+a.credentials-box {
+  display: flex;
+  flex-direction: column;
+  background: $bg-color;
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  border: 1px solid $border-color;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+  width: 280px;
+  min-height: 280px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    border-color: $accent-color;
+  }
+
+  .credential-institution {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: $accent-color;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .credential-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, $border-color, transparent);
+    margin-bottom: 1rem;
+  }
+
+  .credentials-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .credential-degree {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .credential-focus {
+    font-size: 0.82rem;
+    color: $text-color;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+  }
+
+  .credential-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .credential-line {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .credential-label {
+    color: $text-light;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+  }
+
+  .credential-value {
+    color: $text-color;
+    font-size: 0.82rem;
+  }
+}
 
 // Footer improvements
 .site-footer {
@@ -425,7 +578,17 @@ h3 { font-size: 1.5rem; }
 }
 
 // Responsive design
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0 40px;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
   .profile-header {
     .profile-name {
       font-size: 2rem;
@@ -441,13 +604,24 @@ h3 { font-size: 1.5rem; }
     align-items: center;
     gap: 2rem;
 
+    .profile-left {
+      align-items: center;
+      gap: 1rem;
+    }
+
     .profile-image {
       width: 200px;
       height: 200px;
     }
 
+    a.credentials-box {
+      width: 100%;
+      max-width: 300px;
+    }
+
     .profile-bio {
       text-align: left;
+      width: 100%;
 
       p {
         font-size: 1rem;
@@ -488,6 +662,70 @@ h3 { font-size: 1.5rem; }
 
     &::before {
       left: -1.25rem;
+    }
+  }
+
+  // Responsive skills table
+  .skills-table {
+    margin: 2rem 0;
+    border-radius: 8px;
+
+    table {
+      font-size: 0.9rem;
+    }
+
+    thead th {
+      padding: 1rem 1.25rem;
+      font-size: 1rem;
+    }
+
+    tbody td {
+      padding: 1.25rem;
+    }
+
+    .skill-category-name {
+      font-size: 0.95rem;
+      width: auto;
+      min-width: 140px;
+    }
+
+    .skill-list {
+      .skill-group {
+        margin-bottom: 0.6rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  // Responsive credentials box
+  a.credentials-box {
+    padding: 1.5rem 1.25rem;
+    min-height: auto;
+
+    .credential-institution {
+      font-size: 0.9rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .credential-degree {
+      font-size: 0.9rem;
+    }
+
+    .credential-focus {
+      font-size: 0.78rem;
+      margin-bottom: 1rem;
+    }
+
+    .credential-label {
+      font-size: 0.65rem;
+    }
+
+    .credential-value {
+      font-size: 0.78rem;
+    }
+
+    .credential-details {
+      gap: 0.6rem;
     }
   }
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Home
 description: Senior Data Engineer specializing in scalable data systems, streaming analytics, and cloud-native data warehousing solutions
 ---
@@ -10,8 +10,29 @@ description: Senior Data Engineer specializing in scalable data systems, streami
 </div>
 
 <div class="profile-content">
-  <div class="profile-image-container">
-    <img src="/avw-portfolio/assets/images/avw-headshot.jpg" alt="Albert Wiryawan" class="profile-image">
+  <div class="profile-left">
+    <div class="profile-image-container">
+      <img src="/avw-portfolio/assets/images/avw-headshot.jpg" alt="Albert Wiryawan" class="profile-image">
+    </div>
+
+    <a href="/avw-portfolio/experience/#educational-background" class="credentials-box">
+      <div class="credential-institution">University of Illinois at Urbana-Champaign</div>
+      <div class="credential-divider"></div>
+      <div class="credentials-content">
+        <div class="credential-degree">B.S. Material Science & Engineering</div>
+        <div class="credential-focus">Concentration: Electronic Materials</div>
+        <div class="credential-details">
+          <div class="credential-line">
+            <span class="credential-label">Minors:</span>
+            <span class="credential-value">Computational Science & Engineering, Electrical & Computer Engineering</span>
+          </div>
+          <div class="credential-line">
+            <span class="credential-label">Certificate:</span>
+            <span class="credential-value">Data Science</span>
+          </div>
+        </div>
+      </div>
+    </a>
   </div>
 
   <div class="profile-bio">

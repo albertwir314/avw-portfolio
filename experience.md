@@ -79,111 +79,61 @@ My career in software development has been shaped by diverse projects, continuou
 
 ## Technical Expertise
 
-### Programming Languages
-<div class="skills-grid">
-  <div class="skill-category">
-    <h4>Primary Languages</h4>
-    <ul>
-      <li>Python</li>
-      <li>Java</li>
-      <li>SQL</li>
-      <li>Terraform</li>
-    </ul>
-  </div>
-  
-  <div class="skill-category">
-    <h4>Additional Experience</h4>
-    <ul>
-      <li>C++</li>
-      <li>R</li>
-      <li>Matlab</li>
-    </ul>
-  </div>
-</div>
-
-### Data Engineering & Analytics
-<div class="skills-grid">
-  <div class="skill-category">
-    <h4>Data Storage & Processing</h4>
-    <ul>
-      <li>Apache Iceberg</li>
-      <li>Apache Kafka</li>
-      <li>Trino Query Engine</li>
-      <li>Protobuf</li>
-    </ul>
-  </div>
-
-  <div class="skill-category">
-    <h4>Data Platforms</h4>
-    <ul>
-      <li>Snowflake</li>
-      <li>Databricks</li>
-      <li>PyData Stack (Pandas, NumPy, Scikit-learn)</li>
-    </ul>
-  </div>
-</div>
-
-### Libraries & Frameworks
-<div class="skills-grid">
-  <div class="skill-category">
-    <h4>API & Web Development</h4>
-    <ul>
-      <li>FastAPI</li>
-      <li>Flask</li>
-      <li>REST APIs</li>
-      <li>GraphQL</li>
-    </ul>
-  </div>
-
-  <div class="skill-category">
-    <h4>Big Data</h4>
-    <ul>
-      <li>Apache Spark</li>
-      <li>Hadoop Ecosystem</li>
-      <li>Stream Processing</li>
-      <li>ETL/ELT Pipelines</li>
-    </ul>
-  </div>
-</div>
-
-### Cloud & Infrastructure
-<div class="skills-grid">
-  <div class="skill-category">
-    <h4>Cloud Providers</h4>
-    <ul>
-      <li>Google Cloud Platform (GCP)</li>
-      <li>Amazon Web Services (AWS)</li>
-      <li>Microsoft Azure</li>
-    </ul>
-  </div>
-  
-  <div class="skill-category">
-    <h4>DevOps & Tools</h4>
-    <ul>
-      <li>Docker</li>
-      <li>Kubernetes</li>
-      <li>Jenkins</li>
-      <li>Git / Unix</li>
-    </ul>
-  </div>
+<div class="skills-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Technologies & Skills</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="skill-category-name">Programming Languages</td>
+        <td class="skill-list">
+          <span class="skill-group">
+            <strong>Primary:</strong> Python, Java, SQL, Terraform
+          </span>
+          <span class="skill-group">
+            <strong>Additional:</strong> C++, R, Matlab
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="skill-category-name">Data Engineering</td>
+        <td class="skill-list">
+          <span class="skill-group">
+            <strong>Storage & Processing:</strong> Apache Iceberg, Apache Kafka, Trino Query Engine, Protobuf
+          </span>
+          <span class="skill-group">
+            <strong>Platforms:</strong> Snowflake, Databricks, PyData Stack (Pandas, NumPy, Scikit-learn)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="skill-category-name">Development Frameworks</td>
+        <td class="skill-list">
+          <span class="skill-group">
+            <strong>API & Web:</strong> FastAPI, Flask, REST APIs, GraphQL
+          </span>
+          <span class="skill-group">
+            <strong>Big Data:</strong> Apache Spark, Hadoop Ecosystem, Stream Processing, ETL/ELT Pipelines
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="skill-category-name">Cloud & Infrastructure</td>
+        <td class="skill-list">
+          <span class="skill-group">
+            <strong>Cloud Providers:</strong> Google Cloud Platform (GCP), Amazon Web Services (AWS), Microsoft Azure
+          </span>
+          <span class="skill-group">
+            <strong>DevOps & Tools:</strong> Docker, Kubernetes, Jenkins, Git, Unix
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ## Educational Background
-
-### Degree & Credentials
-- **B.S. Material Science and Engineering** [Concentration: Electronic Materials]
-- **University of Illinois at Urbana-Champaign**
-- **Minors**: Computational Science and Engineering, Electrical and Computer Engineering
-- **Certificate**: Data Science
-
-### Relevant Coursework
-- **CS 411**: Database Systems
-- **CS 412**: Data Mining
-- **STAT 432**: Statistical Learning
-- **MSE 404**: Computational Materials Science Engineering
-- **MSE 481**: Atomic Scale Simulation
-- **ECON 471**: Econometrics
-
-### Teaching Experience
-- **Teaching Assistant**: MATH 415 - Applied Linear Algebra
-
