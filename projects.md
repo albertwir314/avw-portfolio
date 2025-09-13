@@ -5,8 +5,6 @@ description: A showcase of Albert Wiryawan's software development projects and t
 permalink: /projects/
 ---
 
-# My Projects
-
 Here's a collection of projects that demonstrate my technical skills, problem-solving abilities, and commitment to quality software development. Each project showcases different aspects of my expertise, from full-stack web applications to system architecture and developer tools.
 
 <div class="projects-grid">
