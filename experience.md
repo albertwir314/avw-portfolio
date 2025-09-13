@@ -10,7 +10,7 @@ My career in software development has been shaped by diverse projects, continuou
 <div class="timeline">
   
   <div class="timeline-item">
-    <h4>Data Engineer</h4>
+    <h4>Senior Data Engineer</h4>
     <div class="timeline-date">Jan 2023 - May 2025</div>
     <p><strong>Options Clearing Corporation (OCC)</strong> - Chicago, IL</p>
     <ul>
@@ -32,9 +32,11 @@ My career in software development has been shaped by diverse projects, continuou
   </div>
 
   <div class="timeline-item">
-    <h4>Analyst → Consultant</h4>
+    <h4>Data Engineer Consultant</h4>
     <div class="timeline-date">Jun 2021 - Jan 2023</div>
     <p><strong>Maven Wave Partners</strong> - Chicago, IL</p>
+    <p><em>Progression: Analyst → Consultant</em></p>
+    <p><strong>Key Engagements:</strong> CVS Pharmacy, University of Colorado Boulder, Estee Lauder Company</p>
     <ul>
       <li>Progressed from Analyst to Consultant role, demonstrating technical and client engagement growth</li>
       <li>Worked on multiple client engagements including CVS Pharmacy, University of Colorado Boulder, and Estee Lauder Company</li>
@@ -53,9 +55,10 @@ My career in software development has been shaped by diverse projects, continuou
   </div>
 
   <div class="timeline-item">
-    <h4>Intern → Full-time Team Member</h4>
+    <h4>Team Member</h4>
     <div class="timeline-date">Mar 2019 - May 2021</div>
     <p><strong>EarthSense Inc.</strong> - Champaign, IL</p>
+    <p><em>Progression: Intern → Full-time Team Member</em></p>
     <ul>
       <li>Progressed from intern to full-time team member, demonstrating strong performance and adaptability</li>
       <li>Contributed to agricultural technology solutions and data processing systems</li>
@@ -109,13 +112,36 @@ My career in software development has been shaped by diverse projects, continuou
       <li>Protobuf</li>
     </ul>
   </div>
-  
+
   <div class="skill-category">
     <h4>Data Platforms</h4>
     <ul>
       <li>Snowflake</li>
       <li>Databricks</li>
-      <li>PyData Stack</li>
+      <li>PyData Stack (Pandas, NumPy, Scikit-learn)</li>
+    </ul>
+  </div>
+</div>
+
+### Libraries & Frameworks
+<div class="skills-grid">
+  <div class="skill-category">
+    <h4>API & Web Development</h4>
+    <ul>
+      <li>FastAPI</li>
+      <li>Flask</li>
+      <li>REST APIs</li>
+      <li>GraphQL</li>
+    </ul>
+  </div>
+
+  <div class="skill-category">
+    <h4>Big Data</h4>
+    <ul>
+      <li>Apache Spark</li>
+      <li>Hadoop Ecosystem</li>
+      <li>Stream Processing</li>
+      <li>ETL/ELT Pipelines</li>
     </ul>
   </div>
 </div>
@@ -144,11 +170,20 @@ My career in software development has been shaped by diverse projects, continuou
 
 ## Educational Background
 
+### Degree & Credentials
+- **B.S. Material Science and Engineering** [Concentration: Electronic Materials]
+- **University of Illinois at Urbana-Champaign**
+- **Minors**: Computational Science and Engineering, Electrical and Computer Engineering
+- **Certificate**: Data Science
+
 ### Relevant Coursework
 - **CS 411**: Database Systems
-- **CS 412**: Data Mining  
+- **CS 412**: Data Mining
 - **STAT 432**: Statistical Learning
 - **MSE 404**: Computational Materials Science Engineering
 - **MSE 481**: Atomic Scale Simulation
 - **ECON 471**: Econometrics
+
+### Teaching Experience
+- **Teaching Assistant**: MATH 415 - Applied Linear Algebra
 
