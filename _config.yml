@@ -15,7 +15,6 @@ minima:
 
 # Navigation
 header_pages:
-  - about.md
   - projects.md
   - experience.md
 
