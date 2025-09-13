@@ -5,8 +5,7 @@ description: Senior Data Engineer specializing in scalable data systems, streami
 ---
 
 <div class="profile-header">
-  <h1>Albert Wiryawan</h1>
-  <p class="contact-info">albertwiryawan [at] gmail [dot] com</p>
+  <p class="role-subtitle">>_ Data Engineer | ML Engineer | Software Engineer</p>
 </div>
 
 <div class="profile-content">
