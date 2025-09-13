@@ -15,7 +15,7 @@ description: Senior Data Engineer specializing in scalable data systems, streami
 
   <div class="profile-bio">
     <p>
-      Currently, I am working for <a href="https://www.shorecapitalpartners.com/" target="_blank">Shore Capital Partners</a> as a Senior Data Engineer. I work with our portfolio companies to unify their data to enable better automated company performance tracking. This creates organic growth within these organizations and enables their data for AI/ML use cases in the future. In addition to this, I build out internal platforms and create standardization for the companies' new data practice.
+      Currently, I am working for <a href="https://www.shorecp.com/people/albert-wiryawan" target="_blank">Shore Capital Partners</a> as a Senior Data Engineer. I work with our portfolio companies to unify their data to enable better automated company performance tracking. This creates organic growth within these organizations and enables their data for AI/ML use cases in the future. In addition to this, I build out internal platforms and create standardization for the companies' new data practice.
     </p>
 
     <p>
