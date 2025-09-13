@@ -28,4 +28,4 @@ npm-debug.log*
 .env
 
 # raw descriptions
-raw_descriptions/
+__personal-assets__/
