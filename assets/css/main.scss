@@ -44,9 +44,8 @@ h3 { font-size: 1.5rem; }
 // Header styling
 .site-header {
   border-top: none;
-  border-bottom: 1px solid $border-color;
+  border-bottom: none;
   background-color: $bg-color;
-  box-shadow: 0 2px 4px $shadow-light;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -54,34 +53,23 @@ h3 { font-size: 1.5rem; }
 
 .site-header-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 1rem 0;
-}
-
-.site-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $primary-color;
-  text-decoration: none;
-  
-  &:hover {
-    color: $accent-color;
-    text-decoration: none;
-  }
+  padding: 0.5rem 0;
 }
 
 .site-nav .page-link {
   color: $text-color;
   font-weight: 500;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
+  font-size: 0.95rem;
   transition: color 0.3s ease;
-  
+
   &:hover {
     color: $accent-color;
     text-decoration: none;
   }
-  
+
   &.current {
     color: $accent-color;
   }
@@ -91,6 +79,14 @@ h3 { font-size: 1.5rem; }
 .profile-header {
   text-align: left;
   margin-bottom: 2rem;
+
+  .profile-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $primary-color;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.2;
+  }
 
   .role-subtitle {
     font-size: 1.25rem;
@@ -128,9 +124,9 @@ h3 { font-size: 1.5rem; }
 
     p {
       font-size: 1.1rem;
-      line-height: 1.8;
+      line-height: 1.5;
       color: $text-color;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.8rem;
 
       &:last-child {
         margin-bottom: 0;
@@ -431,6 +427,10 @@ h3 { font-size: 1.5rem; }
 // Responsive design
 @media screen and (max-width: 800px) {
   .profile-header {
+    .profile-name {
+      font-size: 2rem;
+    }
+
     .role-subtitle {
       font-size: 1rem;
     }
@@ -451,6 +451,8 @@ h3 { font-size: 1.5rem; }
 
       p {
         font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 0.7rem;
       }
     }
   }
@@ -468,8 +470,13 @@ h3 { font-size: 1.5rem; }
     grid-template-columns: 1fr;
   }
 
+  .site-header-content {
+    padding: 0.4rem 0;
+  }
+
   .site-nav .page-link {
     margin-left: 1rem;
+    font-size: 0.9rem;
   }
 
   .timeline {
