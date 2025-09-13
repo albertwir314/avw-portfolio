@@ -2,14 +2,14 @@
   <div class="wrapper">
     <div class="footer-content">
       <!-- CTA Section -->
-      <div class="footer-cta" style="text-align: center; margin-bottom: 2rem;">
+      <div class="footer-cta">
         <h4>Ready to start a conversation?</h4>
         <p>Let's discuss how we can work together to build something amazing.</p>
       </div>
-      
+
       <!-- Social Buttons Section -->
-      <div class="footer-social" style="text-align: center; margin-bottom: 2rem;">
-        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <div class="footer-social">
+        <div class="social-buttons">
           {%- if site.email -%}
           <a href="mailto:{{ site.email }}" class="btn btn-outline">📧 Email</a>
           {%- endif -%}
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="footer-bottom">
       <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author | default: site.title }}. Built with Jekyll and hosted on GitHub Pages.</p>
     </div>
