@@ -1,0 +1,52 @@
+---
+layout: home
+title: Home
+description: Senior Data Engineer specializing in scalable data systems, streaming analytics, and cloud-native data warehousing solutions
+---
+
+<div class="profile-header">
+  <h1 class="profile-name">Albert Wiryawan</h1>
+  <p class="role-subtitle">>_ Data Engineer | ML Engineer | Software Engineer</p>
+</div>
+
+<div class="profile-content">
+  <div class="profile-left">
+    <div class="profile-image-container">
+      <img src="/avw-portfolio/assets/images/avw-headshot.jpg" alt="Albert Wiryawan" class="profile-image">
+    </div>
+
+    <a href="/avw-portfolio/experience/#educational-background" class="credentials-box">
+      <div class="credential-institution">University of Illinois at Urbana-Champaign</div>
+      <div class="credential-divider"></div>
+      <div class="credentials-content">
+        <div class="credential-degree">B.S. Material Science & Engineering</div>
+        <div class="credential-focus">Concentration: Electronic Materials</div>
+        <div class="credential-details">
+          <div class="credential-line">
+            <span class="credential-label">Minors:</span>
+            <span class="credential-value">Computational Science & Engineering, Electrical & Computer Engineering</span>
+          </div>
+          <div class="credential-line">
+            <span class="credential-label">Certificate:</span>
+            <span class="credential-value">Data Science</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="profile-bio">
+    <p>
+      Currently, I serve as a Senior Data Engineer at <a href="https://www.shorecp.com/people/albert-wiryawan" target="_blank">Shore Capital Partners</a>, where I collaborate with portfolio companies to unify their data ecosystems and enable automated performance tracking. This data unification drives organic growth within these organizations while preparing their infrastructure for future AI/ML applications. Additionally, I develop internal platforms and establish standardization frameworks for emerging data practices across the company and its portfolio.
+    </p>
+
+    <p>
+      I received my B.S. in Material Science and Engineering from the University of Illinois at Urbana-Champaign. Throughout my time here, I honed in on skills in both the computational and physical sciences. My past work has mainly revolved around the build out of data systems to enable high impact utilization of data in AI/ML use cases and KPI tracking.
+    </p>
+
+    <p>
+      I'm a passionate data engineer with a strong foundation in scalable data systems and analytics. My journey in technology has been driven by curiosity about data patterns, continuous learning in emerging technologies, and a desire to solve complex data challenges through elegant, efficient solutions.
+    </p>
+  </div>
+</div>
+

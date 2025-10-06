@@ -1,0 +1,30 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-content">
+      <!-- CTA Section -->
+      <div class="footer-cta">
+        <h4>Ready to start a conversation?</h4>
+        <p>Let's discuss how we can work together to build something amazing.</p>
+      </div>
+
+      <!-- Social Buttons Section -->
+      <div class="footer-social">
+        <div class="social-buttons">
+          {%- if site.email -%}
+          <a href="mailto:{{ site.email }}" class="btn btn-outline">📧 Email</a>
+          {%- endif -%}
+          {%- if site.linkedin_username -%}
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="btn btn-outline">💼 LinkedIn</a>
+          {%- endif -%}
+          {%- if site.github_username -%}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" class="btn btn-outline">🐙 GitHub</a>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author | default: site.title }}. Built with Jekyll and hosted on GitHub Pages.</p>
+    </div>
+  </div>
+</footer>
