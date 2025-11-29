@@ -28,4 +28,5 @@ npm-debug.log*
 .env
 
 # raw descriptions
-__personal-assets__/
+.personal_assets/
+.claude

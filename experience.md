@@ -136,4 +136,13 @@ My career in software development has been shaped by diverse projects, continuou
   </table>
 </div>
 
-## Educational Background
+## Education
+
+**University of Illinois at Urbana-Champaign** (Aug 2016 - May 2021)
+
+- **Degree:** B.S. Material Science & Engineering
+- **Concentration:** Electronic Materials
+- **Minors:** Computational Science & Engineering, Electrical & Computer Engineering
+- **Certificate:** Data Science
+
+Developed strong foundation in both computational and physical sciences, with a focus on data-driven approaches to materials science and engineering problems.
