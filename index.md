@@ -6,7 +6,7 @@ description: Senior Data Engineer specializing in scalable data systems, streami
 
 <div class="profile-header">
   <h1 class="profile-name">Albert Wiryawan</h1>
-  <p class="role-subtitle">>_ Data Engineer | ML Engineer | Software Engineer</p>
+  <p class="role-subtitle">Data Engineer. ML Engineer. Software Engineer.</p>
 </div>
 
 <div class="profile-content">
