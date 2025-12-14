@@ -57,10 +57,12 @@ h1, h2, h3, h4, h5, h6 {
   color: $text-primary;
   line-height: 1.15;
   margin-top: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 8vw, 3.5rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   margin-bottom: 0.5rem;
@@ -129,19 +131,30 @@ a {
   -webkit-backdrop-filter: blur(20px);
   border-top: none;
   border-bottom: none;
+
+  .wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: none !important;
+  }
 }
 
 .site-header-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 0;
+  padding: 16px 24px;
   min-height: 52px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  float: none;
+  position: static;
 
   .trigger {
     display: flex;
@@ -417,7 +430,7 @@ body.home-page {
   background: $bg-secondary;
   border: none;
   border-radius: 16px;
-  padding: 40px;
+  padding: 28px 32px;
   width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -430,7 +443,7 @@ body.home-page {
     font-size: 1.375rem;
     font-weight: 600;
     color: $text-primary;
-    margin: 0 0 12px;
+    margin: 0 0 8px;
 
     a {
       color: inherit;
@@ -446,14 +459,14 @@ body.home-page {
     font-size: 1rem;
     color: $text-secondary;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   .project-links {
-    margin-top: 20px;
     display: flex;
-    gap: 16px;
+    gap: 12px;
     flex-wrap: wrap;
+    margin-top: 16px;
   }
 }
 
@@ -471,8 +484,8 @@ body.home-page {
 
 .tech-tag {
   display: inline-block;
-  background: $bg-secondary;
-  color: $text-secondary;
+  background: rgba($accent-color, 0.1);
+  color: $accent-color;
   padding: 4px 12px;
   border-radius: 100px;
   font-size: 0.75rem;
@@ -841,16 +854,22 @@ a.credentials-box {
   }
 
   .site-header-content {
-    padding: 12px 0;
+    padding: 12px 16px;
   }
 
   .site-nav {
+    width: 100%;
+    justify-content: center;
+
     .trigger {
-      gap: 24px;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: nowrap;
     }
 
     .page-link {
       font-size: 0.8rem;
+      white-space: nowrap;
     }
   }
 
@@ -944,6 +963,80 @@ a.credentials-box {
   .post-header {
     .post-title {
       font-size: 2rem;
+    }
+  }
+}
+
+// ===========================================
+// SMALL PHONE RESPONSIVE (≤480px)
+// ===========================================
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .wrapper {
+    padding: 0 16px;
+  }
+
+  .site-header-content {
+    padding: 10px 12px;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: center;
+
+    .trigger {
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+
+    .page-link {
+      font-size: 0.7rem;
+      white-space: nowrap;
+    }
+  }
+
+  .profile-header {
+    .profile-name {
+      font-size: 1.75rem;
+    }
+
+    .role-subtitle {
+      font-size: 0.9rem;
+    }
+  }
+
+  .profile-content {
+    .profile-image {
+      width: 140px;
+      height: 140px;
+    }
+
+    .profile-bio p {
+      font-size: 0.9375rem;
+    }
+  }
+
+  .post-header {
+    .post-title {
+      font-size: 1.5rem;
+    }
+  }
+
+  .timeline-item h4 {
+    font-size: 1.125rem;
+  }
+
+  .project-card {
+    padding: 20px;
+
+    h3 {
+      font-size: 1.25rem;
     }
   }
 }

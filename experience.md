@@ -7,6 +7,8 @@ permalink: /experience/
 
 My career in software development has been shaped by diverse projects, continuous learning, and a commitment to delivering high-quality solutions. Here's an overview of my professional journey and the experiences that have developed my expertise.
 
+## Work Experience
+
 <div class="timeline">
   
   <div class="timeline-item">

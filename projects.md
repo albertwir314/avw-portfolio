@@ -12,16 +12,15 @@ Here's a collection of projects that demonstrate my technical skills, problem-so
   <div class="project-card">
     <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
     <p class="project-description">{{ project.description }}</p>
-    
+
     {% if project.tech_stack %}
     <div class="tech-stack">
-      <strong>Technologies:</strong>
       {% for tech in project.tech_stack %}
         <span class="tech-tag">{{ tech }}</span>
       {% endfor %}
     </div>
     {% endif %}
-    
+
     <div class="project-links">
       <a href="{{ project.url | relative_url }}" class="btn btn-outline">Learn More</a>
       {% if project.github_url %}
