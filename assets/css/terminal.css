@@ -1,0 +1,435 @@
+/* ============================================
+   Terminal Portfolio — terminal.css
+   Tokyo Night color scheme
+   ============================================ */
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-page: #0d1117;
+  --bg-terminal: #1a1b26;
+  --bg-titlebar: #24283b;
+  --text-body: #a9b1d6;
+  --text-bright: #c0caf5;
+  --text-muted: #565f89;
+  --green: #9ece6a;
+  --cyan: #7dcfff;
+  --purple: #bb9af7;
+  --orange: #ff9e64;
+  --blue: #7aa2f7;
+  --dot-red: #ff5f57;
+  --dot-yellow: #febc2e;
+  --dot-green: #28c840;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-body);
+  background: var(--bg-page);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* --- Terminal Window --- */
+.terminal {
+  width: 100%;
+  max-width: 900px;
+  background: var(--bg-terminal);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* --- Title Bar --- */
+.terminal-titlebar {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--bg-titlebar);
+  user-select: none;
+}
+
+.titlebar-dots {
+  display: flex;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.titlebar-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.titlebar-dot--red { background: var(--dot-red); }
+.titlebar-dot--yellow { background: var(--dot-yellow); }
+.titlebar-dot--green { background: var(--dot-green); }
+
+.titlebar-title {
+  flex: 1;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+/* --- Terminal Body --- */
+.terminal-body {
+  padding: 24px 28px 40px;
+}
+
+/* --- Sections --- */
+.terminal-section {
+  margin-bottom: 40px;
+}
+
+.terminal-section:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Command Prompt --- */
+.command-prompt {
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.prompt-symbol {
+  color: var(--green);
+}
+
+.command-text {
+  color: var(--text-bright);
+}
+
+/* --- Section Output --- */
+.section-output {
+  padding-left: 8px;
+}
+
+/* --- whoami Section --- */
+.whoami-content {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  border: 2px solid var(--text-muted);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.whoami-text h1 {
+  font-size: 22px;
+  color: var(--text-bright);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.whoami-subtitle {
+  color: var(--purple);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.whoami-bio {
+  margin-bottom: 8px;
+}
+
+.whoami-education {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+/* --- Experience Section --- */
+.experience-entry {
+  padding: 16px 0;
+  border-bottom: 1px solid #292e42;
+}
+
+.experience-entry:last-child {
+  border-bottom: none;
+}
+
+.experience-header {
+  margin-bottom: 8px;
+}
+
+.experience-role {
+  color: var(--text-bright);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.experience-company {
+  color: var(--blue);
+}
+
+.experience-date {
+  color: var(--orange);
+  font-size: 13px;
+}
+
+.experience-progression {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.experience-clients {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.experience-bullets {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.experience-bullets li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.experience-bullets li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--cyan);
+  border-radius: 4px;
+  color: var(--cyan);
+  font-size: 12px;
+}
+
+/* --- Interests Section --- */
+.interests-list {
+  list-style: none;
+}
+
+.interests-list li {
+  margin-bottom: 4px;
+}
+
+.interest-key {
+  color: var(--purple);
+}
+
+.interest-eq {
+  color: var(--text-muted);
+}
+
+.interest-value {
+  color: var(--text-body);
+}
+
+/* --- Projects Section --- */
+.projects-ls {
+  font-size: 13px;
+}
+
+.ls-header {
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.ls-entry {
+  color: var(--blue);
+}
+
+.ls-note {
+  color: var(--text-muted);
+  margin-top: 12px;
+  font-style: italic;
+}
+
+/* --- Contact Section --- */
+.contact-list {
+  list-style: none;
+}
+
+.contact-list li {
+  margin-bottom: 4px;
+}
+
+.contact-key {
+  color: var(--purple);
+}
+
+.contact-sep {
+  color: var(--text-muted);
+}
+
+/* --- Blinking Cursor --- */
+.cursor-line {
+  margin-top: 40px;
+}
+
+.cursor-block {
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+  background: var(--green);
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* --- Typing Animation --- */
+.command-text {
+  display: inline;
+}
+
+.section-output {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.section-output.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  .section-output {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .cursor-block {
+    animation: none;
+  }
+
+  .command-text {
+    opacity: 1 !important;
+  }
+}
+
+/* --- Responsive: Tablet --- */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .terminal {
+    border-radius: 10px;
+  }
+
+  .terminal-body {
+    padding: 20px 20px 32px;
+  }
+
+  .whoami-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .whoami-text {
+    text-align: left;
+  }
+
+  .ls-decorative {
+    display: none;
+  }
+}
+
+/* --- Responsive: Mobile --- */
+@media (max-width: 480px) {
+  body {
+    padding: 10px 6px;
+    font-size: 13px;
+  }
+
+  .terminal {
+    border-radius: 8px;
+  }
+
+  .terminal-body {
+    padding: 16px 14px 24px;
+  }
+
+  .titlebar-title {
+    font-size: 11px;
+  }
+
+  .whoami-text h1 {
+    font-size: 18px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-list li {
+    margin-bottom: 8px;
+  }
+
+  .tech-tags {
+    gap: 4px;
+  }
+
+  .tech-tag {
+    font-size: 11px;
+    padding: 1px 6px;
+  }
+}
