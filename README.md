@@ -1,4 +1,6 @@
-# avw-portfolio
+# albertwir314.github.io
+
+Live at **https://albertwir314.github.io/**
 
 A terminal-themed personal portfolio website built with vanilla HTML, CSS, and JavaScript. The site emulates a Unix terminal interface, presenting professional experience and technical skills through familiar CLI commands.
 
@@ -32,13 +34,14 @@ No frameworks, bundlers, or build tools required.
 ## Project Structure
 
 ```
-avw-portfolio/
+albertwir314.github.io/
 ├── index.html              # Single-page portfolio
 ├── assets/
 │   ├── css/
 │   │   └── terminal.css    # All styles (layout, theme, animations)
 │   ├── images/
-│   │   └── avw-headshot.jpg
+│   │   ├── avw-headshot.jpg           # 480x480 web-sized crop (used by the site)
+│   │   └── avw-headshot-original.jpg  # Full-resolution source
 │   └── js/
 │       └── terminal.js     # Typing effect and scroll animations
 ├── .nojekyll               # Bypasses Jekyll on GitHub Pages
